@@ -1,0 +1,15 @@
+body{
+    background-color: #edead0;
+    font-family: times new roman, serif;
+    margin: 0;
+}
+.logo, .usuario{
+    margin: 200px;
+    display: flex;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
