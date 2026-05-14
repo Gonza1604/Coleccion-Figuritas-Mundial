@@ -62,3 +62,21 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
 }
+
+/* Hero buttons */
+
+.hero-buttons a{
+    background-color: #0a1045;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.hero-buttons a:hover{
+    background-color: #1a237e;
+}
+
+.hero-buttons{
+    margin-top: 20px;
+}
