@@ -1,24 +1,24 @@
 
 .logo, .usuario{
-    width: 200px;
+    width: 100px;
     height: auto;
     margin: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
 }
-.usuario{
-    width: 180px;
-    height: auto;
-    margin: 10px;
-    display: flex;
-}
+
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #0a1045;
+    color: white;
 }
 
-.header-izquierda, .header-derecha{
+.header-izquierda, .header-derecho{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,4 +30,35 @@
     gap: 10px;
     margin: 0;
     padding: 0;
+}
+
+/* Hero image */
+.heroImage {    
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url('../inicio/img/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.heroImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.heroImage h1, .heroImage h2, .heroImage p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
