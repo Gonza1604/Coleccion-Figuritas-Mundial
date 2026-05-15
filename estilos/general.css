@@ -5,10 +5,25 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
 }
 a{
     color: #288ca0;
 }
+a:hover{
+    color: #1a237e;
+}
 * {
   box-sizing: border-box;
+}
+footer{
+    background-color: #0a1045;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
