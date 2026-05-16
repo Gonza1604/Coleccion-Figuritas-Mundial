@@ -1,0 +1,17 @@
+body{
+    background-color: #d6d6d5;
+    color: #000000;
+    font-family: times new roman, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+a{
+    color: #288ca0;
+}
+a:hover{
+    color: #1a237e;
+}
+* {
+  box-sizing: border-box;
+}
