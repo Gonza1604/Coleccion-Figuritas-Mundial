@@ -1,37 +1,3 @@
-
-.logo, .usuario{
-    width: 100px;
-    height: auto;
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-}
-
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0a1045;
-    color: white;
-}
-
-.header-izquierda, .header-derecho{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-izquierda-menu, .header-derecho-menu{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-}
-
 /* Hero image */
 .heroImage {    
     margin: 0;
