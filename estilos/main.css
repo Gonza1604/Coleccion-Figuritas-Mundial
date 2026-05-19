@@ -131,3 +131,12 @@ background-position: center;
 .caja h2{
    text-decoration: underline;
 }
+
+/* Estadísticas generales */
+
+.estadisticas-generales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
