@@ -5,38 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../estilos/general.css">
     <link rel="stylesheet" href="../../../estilos/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../estilos/perfil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <section class="header-izquierda">
-            <img src="../../../inicio/img/logo2.png" alt="Logo" class="logo">
-            <ul class="header-izquierda-menu">
-                <li><a href="../../../index.html">Home</a></li>   
-                <li><a href="../../../inicio/header/izquierda/mi-coleccion.html">Mi Colección</a></li>
-                <li><a href="../../../inicio/header/izquierda/sobres.html">Sobres</a></li>
-                <li><a href="../../../inicio/header/izquierda/intercambio.html">Intercambio</a></li>
-                <li><a href="../../../inicio/header/izquierda/tabla-clasificacion.html">Tabla de Clasificación</a></li>
-            </ul>
-        </section>
-        <section class="header-derecho">
-            <ul class="header-derecho-menu">
-                <li><a href="../../../inicio/header/derecho/iniciar-sesion.html">Iniciar sesión</a></li>
-                <li><a href="../../../inicio/header/derecho/registro.html">Registro</a></li>
-                <li><a href="../../../inicio/header/derecho/perfil.html">Perfil</a></li>
-            </ul>
-            <img src="../../../inicio/img/usuario.png" alt="Usuario" class="usuario">
-        </section>
-    </header>
-    <main>
+    <!-- <section class="header-izquierda">
+        <img src="../../img/logo2.png" alt="Logo" class="logo">
+        <ul class="header-izquierda-menu">
+            <li><a href="../../../index.html">Home</a></li>   
+            <li><a href="../izquierda/mi-coleccion.html">Mi Colección</a></li>
+            <li><a href="../izquierda/todas-figuritas.html">Todas las Figuritas</a></li>
+            <li><a href="../izquierda/sobres.html">Sobres</a></li>
+            <li><a href="../izquierda/intercambio.html">Intercambio</a></li>
+            <li><a href="../izquierda/tabla-clasificacion.html">Tabla de Clasificación</a></li>
+        </ul>
+    </section> -->
+    <!-- <section class="header-derecho">
+        <img src="../../img/usuario.png" alt="Usuario" class="usuario">
+        <ul class="header-derecho-menu">
+            <li><a href="iniciar-sesion.html">Iniciar sesión</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </section> -->
+    <section class="perfil">
+        <img src="../../../assets/imagenes/FotoPerfilUsu.png" alt="Foto de perfil" class="foto-perfil">
+        <div class="perfil-centro">
         
-    </main>
-    <footer class="footer">
-        <p>
-            &copy; 2026 Colección de Figuritas del Mundial. Todos los derechos reservados.
-        </p>
-    </footer>
+        <h1>Daniel10</h1>
+    <div class="info-usuario">
+    <div class="info-pais">
+    <img src="../../../assets/iconos/Bandera-Argentina.png" alt="Bandera de Argentina" class="bandera-argentina">
+    <p>Argentina</p>
+    </div>
+    <div class="info-fecha">
+    <img src="../../../assets/iconos/icono-calendar.png" alt="Icono de calendario" class="icono-calendar">
+    <p class="info-union">Se unió el 25 de mayo de 2026</p>
+    </div>
+    </div>
+  <div class="stats-perfil">
+  <div class="div-info-perfil">
+    <img src="../../../assets/iconos/icono-copa.png" alt="Icono de copa" class="icono-copa">
+    <p>Logros: <span>7</span></p>
+</div>
+  <div class="div-info-perfil"> 
+     <img src="../../../assets/iconos/icono-intercambio.png" alt="Icono de intercambio" class="icono-intercambio-stats">
+    <p>Intercambios: <span>23</span></p> 
+</div>
+ 
+  <div class="div-info-perfil">
+    <img src="../../../assets/iconos/icono-cartas.png" alt="Icono de figurita" class="icono-figurita-stats">
+    <p>Figuritas: <span>184</span></p>
+</div>
+</div>
+</div>
+<div class="nivel">
+    <img src="../../../assets/iconos/icono-nivel.png" alt="Icono de nivel" class="icono-nivel">
+<!-- <p> <strong>Nivel 12</strong></p> -->
+<!-- <img src="../../../assets/iconos/barra-icono.png" alt="Barra de progreso Nivel" class="barra-progreso-nivel"> -->
+</div>
+      </div>
+     </section>
+    <div class="contenido-perfil">
+      <section class="Album-actual">
+        <div class="titulo-flecha">
+        <h2> Mi album actual </h2>
+<a href="#">Ver álbum <i class="ti ti-arrow-right"></i></a>
+</div>
+<div class="progreso">
+    <div class="contenedor-album">
+    <img src="../../../assets/imagenes/album2026.png" alt="Album 2026" class="album-2026">
+    </div>
+    <div info-progreso>
+    <p class="nombre-album" > Album 2026 </p>
+            <div class="barra-de-progreso">
+            <progress value="70" max="100"></progress>
+            <p>70%</p>
+        </div>
+        <p class="cant-figus-actual">Completaste 456 figuritas de 600 figuritas</p>
+    </div>
+    </div>
+<div class="tipos-fig">
+<ul>
+<li><span>24 </span>
+    <p>comunes</p></li>
+<li><span>17</span> <p>raras</p></li>
+<li><span>10</span><p> especiales</p></li>
+<li><span>5</span> <p>legendarias</p></li>
+</ul>
+</div>
+      </section>
+      <section class="MisfiguritasFavoritas">
+    <div class="titulo-figuritas">
+      <h2> Mis figuritas favoritas </h2>
+      <a href="#">Ver todas<i class="ti ti-arrow-right"></i></a>
+      </div>
+       <div class="contenedor-fotos">
+      <img src="../../../assets/imagenes/figurita-cr7.jpg" alt="FiguritaFavorita2" class="figurita-favorita">
+      <img src="../../../assets/imagenes/figu-messiDorada.jpg" alt="FiguritaFavorita2" class="figurita-favorita">
+      <img src="../../../assets/imagenes/figu-modric.jpg" alt="FiguritaFavorita2" class="figurita-favorita">
+</div>
+<div class="carrusel-dots">
+    <span class="dot activo"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+      </section>
+      <section class="logros">
+    <div class="titulo-logros">
+    <h2> Mis logros </h2>
+    <a href="#">Ver todos <i class="ti ti-arrow-right"></i></a>
+    </div>
+    <div class="logros-completados">
+    <div>
+             <img src="../../../assets/iconos/icono-insigniaBotin.png" alt="Icono de insignia de botín" class="icono-insignia">
+       <p>Colecciona 10 figuritas  </p>
+       <strong> Completado</strong>
+     </div>
+    <div>
+         <img src="../../../assets/iconos/icono-insigniaViolet.png" alt="Icono de insignia violeta" class="icono-insignia">
+    <p> Completa 25% del album </p> 
+    <strong> Completado</strong>
+    </div>
+    <div>
+        <img src="../../../assets/iconos/icono-insigniaGris.png" alt="Icono de insignia gris" class="icono-insignia">
+        <p> Completa el 50% del album </p> 
+        <strong> Completado</strong>
+    </div>
+    <div >
+        <img src="../../../assets/iconos/icono-insigniaDor.png" alt="Icono de insignia dorada" class="icono-insignia">
+        <p> Completa el album </p>
+        <strong> En proceso</strong>
+</div>
+      </div>
+    </div>
+      </section>
+      <section class="intercambios-Recientes-cont">
+        <div class="titulo-intercambios">
+            <h2> Mis intercambios recientes </h2>
+             <a href="#">Ver todos <i class="ti ti-arrow-right"></i></a>
+ </div>
+    <ul class="intercambios-recientes">
+    <li class="intercambio">
+<img src="../../../assets/imagenes/momo-interc.png" alt="Intercambio con Momo" class="foto-intercambio">
+<div class="info-intercambio">
+<p>MomoSplinter</p>
+<p>Hace 2 hs</p>
+</div>
+<div class="intercambiado">
+<!-- <p>Te dió</p> -->
+<img src="../../../assets/imagenes/figu-messi.jpg" alt="Figurita Messi" class="figurita-intercambio">
+<img src="../../../assets/iconos/Intercambiar-Icono.png"  alt="Icono de intercambio" class="icono-intercambio">
+<img src="../../../assets/imagenes/figu-ronaldo.jpg" alt="Figurita CR7" class="figurita-intercambio">
+</div>
+<!-- <div>
+</div> -->
+<img src="../../../assets/iconos/icono-stick.png " alt="Icono stick" class="icono-stick">
+    </li>
+    <li class="intercambio">
+    <img src="../../../assets/imagenes/coq-inter.png" alt="Intercambio con Ariana" class="foto-intercambio">
+<div class="info-intercambio">
+<p>Ariana123</p>
+<p>Hace 8 hs</p>
+</div>
+<div class="intercambiado">
+<img src="../../../assets/imagenes/figu-enzoFernandez.jpg" alt="Figurita Enzo Fernandez" class="figurita-intercambio">
+<img src="../../../assets/iconos/Intercambiar-Icono.png"  alt="Icono de intercambio" class="icono-intercambio">
+<img src="../../../assets/imagenes/figu-yamal.jpg" alt="Figurita Yamal" class="figurita-intercambio">
+</div>
+<!-- <div>
+</div> -->
+<img src="../../../assets/iconos/icono-stick.png " alt="Icono stick" class="icono-stick">
+    </li>
+    <li class="intercambio">
+<img src="../../../assets/imagenes/foto-perfil.png" alt="Intercambio con Agustin" class="foto-intercambio">
+<div class="info-intercambio">
+<p>Agustinsj</p>
+<p>Hace 10 hs</p>
+</div>
+<div class="intercambiado">
+    <img src="../../../assets/imagenes/figu-vinicius.jpg" alt="Figurita Vinicius" class="figurita-intercambio">
+    <img src="../../../assets/iconos/Intercambiar-Icono.png"  alt="Icono de intercambio" class="icono-intercambio">
+    <img src="../../../assets/imagenes/figu-haaland.jpg" alt="Figurita Haaland" class="figurita-intercambio">
+</div>
+<!-- <div>
+</div> -->
+<img src="../../../assets/iconos/icono-stick.png " alt="Icono stick" class="icono-stick">
+</li>
+    </ul>
+      </section>
 </body>
 </html>
