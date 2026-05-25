@@ -1,0 +1,472 @@
+body{
+background-color:#0a1628
+}
+
+.perfil{
+max-width: 100%;
+min-height: 300px;
+display:flex;
+position:relative;
+flex-direction:row;
+border: 3px solid black;
+border-radius: 8px;
+background-image:url(../assets/imagenes/portada-messi.webp);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center 15%;
+margin:15px;
+overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+}
+.perfil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 90, 174, 0.5); /* el último número es la opacidad, 0 a 1 */
+}
+.perfil p ,h1 {
+color:white;
+
+}
+.nivel{
+  width:10%;
+display:flex;
+flex-direction:column;
+align-items: center;
+gap:3px;
+/* border:1px solid #274DEA;
+border-radius: 3px; */
+/* background-color: #939ca9; */
+color: white;
+position:relative;
+  z-index: 2;
+position:absolute;
+top:22%;
+left:19%;
+
+}
+.icono-nivel{
+ width:50%;
+}
+.nivel p{
+margin:0;
+white-space: nowrap;
+width:20%;
+height :10%;
+}
+.stats-perfil{
+bottom:10%;
+right:50%;
+display:flex;
+flex-direction:row;
+border:2px solid #274DEA;
+border-radius: 5px;
+
+}
+.perfil-centro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+  color: white;
+  position:relative;
+  z-index: 1;
+  margin-right:30%;
+}
+.foto-perfil{
+max-width: 10%;
+max-height: 10%;
+ position:relative;
+  z-index: 2;
+
+   
+}
+.info-pais{
+display:flex;
+flex-direction:row;
+gap:5px;
+}
+
+.info-fecha img{
+max-width: 20px;
+max-height: 20px;
+gap:5px;
+margin-left:10px;
+}
+.info-usuario{
+display:flex;
+ flex-direction:row;
+}
+.info-fecha{
+display:flex;
+flex-direction:row;
+}
+
+.bandera-argentina{
+width:20px;
+height:20px;
+
+}
+.div-info-perfil{
+display:flex;
+flex-direction:row;
+background-color:#031a3c;
+border:1px solid #274DEA;
+ align-items: center;
+  justify-content: flex-start;
+    flex-wrap: nowrap;
+  align-items: center;
+  padding: 5px;
+  flex:1;
+}
+.div-info-perfil p{
+  color:white;
+   justify-content: flex-start;
+   margin:0;
+}
+.div-info-perfil span {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.div-info-perfil img{
+  bottom: 5px;
+}
+.Album-actual, .MisfiguritasFavoritas, .logros {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: white;
+  flex:1;
+}
+.contenido-perfil{
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+ align-items: stretch; 
+gap: 1rem;
+margin:0.9rem;
+flex-wrap:wrap;
+}
+.figurita-favorita{
+
+ width:25%;      /* ocupa el ancho de su sección */
+  height: auto;       /* mantiene las proporciones */
+   object-fit: contain;
+
+}
+.MisfiguritasFavoritas{
+display:flex;
+flex-direction: row;
+ flex-wrap: wrap;
+  gap: 8px; 
+}
+.contenedor-fotos{
+  width:100%;
+display:flex;
+justify-content:space-around;
+gap:1em;
+}
+.MisfiguritasFavoritas h2{
+   width: 100%;
+white-space: nowrap;
+margin-bottom: 10px;
+}
+.titulo-figuritas a{
+color:#274DEA;
+text-decoration: none;
+white-space: nowrap;  /* Evita que el texto salte de línea */
+  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
+  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
+  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
+}
+.album-2026{
+  width:100%;
+  align-self: self-start;
+  height:auto;
+}
+.progreso{
+width:100%;
+display:flex;
+flex-direction:row;
+ align-items: center;
+  padding:0.01em;
+
+}
+.cantidad-figus-actual{
+display:inline;
+}
+.Album-actual{
+ display: flex;
+  flex-direction: column;
+  gap: 0.20rem;
+  padding: 0.30rem;
+}
+.barra-de-progreso{
+display:flex;
+flex-direction:row;
+
+}
+.barra-de-progreso p{
+margin-left:0.5em;
+}
+.titulo-flecha{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:100%;
+}
+.Album-actual a{
+color:#274DEA;
+text-decoration: none;
+white-space: nowrap;  /* Evita que el texto salte de línea */
+  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
+  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
+  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
+}
+i{
+font-size: 20px;
+  color: #274DEA;
+
+}
+.Album-actual h2{
+width: 100%;
+white-space: nowrap;
+}
+.info-progreso{
+display:flex;
+flex-direction:column;
+padding:1em;
+justify-content: flex-start;
+}
+.cant-figus-actual{
+  width:100%;
+  white-space: nowrap;
+margin:0;
+}
+
+.nombre-album{
+display:inline-flex;
+}
+.tipos-fig{
+margin-top: 0;
+width:100%;
+}
+.tipos-fig ul{
+display:flex;
+flex-direction:row;
+  list-style-type:none;
+  padding: 0;    /* ← el ul tiene padding-left por defecto */
+  margin: 0;
+  gap:0.3rem;
+
+
+}
+.tipos-fig li{
+border:0.1em solid #007bff;
+border-radius:5px;
+padding:0.5em;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+flex:1;
+text-align:center;
+}
+.tipos-fig li span{
+text-align:center;
+}
+.tipos-fig li p{
+text-align:center;
+margin:0;
+} 
+.logros{
+display:flex;
+flex-direction:column;
+padding:0.4em;
+}
+.logros-completados{
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
+gap:1em;
+margin:1em;
+}
+.logros-completados p{
+text-align:center;
+ font-size: 0.8rem;
+  margin: 0;
+  color: #aaa;
+  min-height:60px;
+}
+.logros-completados div{
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  flex:1;
+}
+.logros-completados strong{
+color: #00c853;
+  font-size: 0.8rem;
+}
+.logros h2{
+width: 100%;
+
+}
+.titulo-logros{
+display:flex;
+justify-content:space-between;
+width:100%;
+}
+.titulo-logros a{
+color:#274DEA;
+text-decoration: none;
+white-space: nowrap;  /* Evita que el texto salte de línea */
+  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
+  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
+  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
+}
+.titulo-flecha, .titulo-figuritas, .titulo-logros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0.4rem 0 0.4rem;
+      width: 100%;
+        padding: 0.5rem;
+}
+.intercambios-recientes{
+    list-style: none;
+  padding: 0.5rem;
+  margin: 0;
+display:flex;
+flex-direction: column;
+flex:1;
+gap:10px;
+/* border:1px solid black; */
+ /* background-color: rgba(255, 255, 255, 0.05); */
+  /* border: 1px solid rgba(255, 255, 255, 0.15); */
+  border-radius: 8px;
+
+}
+.intercambio{
+display:flex;
+flex-direction: row;
+flex-wrap:nowrap;
+/* border-radius: 8px; */
+gap:10px;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+ justify-content:center;
+}
+.info-intercambio{
+display:flex;
+flex-direction:column;
+width:0.2%;
+justify-content: center;
+}
+.info-intercambio p{
+width:100%;
+white-space: nowrap;
+margin:0;
+}
+.intercambiado{
+display:flex;
+gap: 0.5rem;
+margin:0;
+    padding: 0.5rem;
+align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.figurita-intercambio{
+ width:6vh;
+    height:auto;
+}
+.foto-intercambio{
+ width:8vh;
+    height:auto;
+    align-self: center;
+}
+.icono-intercambio{
+ width:4vh;
+    height:auto;
+}
+.icono-stick{
+ width:4vh;
+    height:4vh;
+     align-self: center;
+     margin-right:5%;
+}
+
+.intercambios-Recientes-cont{
+ background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+    color: white;
+    margin:0.5rem;
+overflow: hidden;
+ padding: 0.5rem;
+
+}
+.titulo-intercambios{
+display:flex;
+justify-content:space-between;
+margin-left:0.5rem;
+}
+.titulo-intercambios a{
+text-decoration:none;
+color:#274DEA;
+text-decoration: none;
+white-space: nowrap;  /* Evita que el texto salte de línea */
+  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
+  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
+  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
+}
+.intercambios-recientes ul{
+display:flex;
+flex-direction: row;
+}
+.icono-copa,.icono-figurita-stats,.icono-intercambio-stats{
+ width:2em;
+    height:auto;
+    margin-left:5px;
+      object-fit: contain;
+}
+.barra-progreso-nivel{
+ width:100%;
+ height:10px;
+ object-fit: contain;
+}
+.icono-calendar{
+margin-left:5px;
+margin-right:2px;
+}
+.icono-insignia{
+  width:75px;
+  height:auto;
+}
+.carrusel-dots {
+  display: flex;
+  gap:0.5rem; /* Separación entre cada puntito */
+  justify-content: center;
+  margin:auto;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #243346; /* Color gris oscuro para los desactivados */
+  border-radius: 50%; /* Los hace perfectamente redondos */
+  display: inline-block;
+}
+
+/* El puntito que representa la página actual (el celeste brillante) */
+.dot.activo {
+  background-color: #007bff; /* Color azul/celeste brillante */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Opcional: un leve brillo azul */
+}
