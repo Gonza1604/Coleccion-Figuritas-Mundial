@@ -1,0 +1,18 @@
+.contenedor-coleccion{
+display:grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap:1rem;
+}
+.contenedor-coleccion h1{
+grid-column: 1 / -1;
+}
+.card{
+display:flex;
+flex-direction: column;
+border: 1px solid black;
+}
+.card img{
+width: 100%;
+max-height: 100%;
+}
