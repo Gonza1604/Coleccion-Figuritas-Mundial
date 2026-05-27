@@ -1,7 +1,7 @@
 body{
 background-color:#0a1628
 }
-
+/* perfil (caja con informacion del usuario */
 .perfil{
 max-width: 100%;
 min-height: 300px;
@@ -28,6 +28,57 @@ overflow: hidden;
     height: 100%;
     background: rgba(0, 90, 174, 0.5); /* el último número es la opacidad, 0 a 1 */
 }
+.stats-perfil{
+bottom:10%;
+right:50%;
+display:flex;
+flex-direction:row;
+ align-items: center;
+  justify-content: center;
+border:2px solid #274DEA;
+border-radius: 5px;
+
+}
+.perfil-centro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+  color: white;
+  position:relative;
+  z-index: 1;
+  margin-right:auto;
+}
+
+.foto-perfil{
+max-width: 10rem; 
+max-height: 10rem;
+ position:relative;
+  z-index: 2;
+
+   
+}
+.info-pais{
+display:flex;
+flex-direction:row;
+gap:5px;
+}
+.icono-calendar{
+margin-left:5px;
+margin-right:2px;
+}
+
+.info-fecha img{
+max-width: 20px;
+max-height: 20px;
+gap:5px;
+margin-left:10px;
+}
+.info-usuario{
+display:flex;
+ flex-direction:row;
+}
 .perfil p ,h1 {
 color:white;
 
@@ -52,50 +103,7 @@ white-space: nowrap;
 width:20%;
 height :10%;
 }
-.stats-perfil{
-bottom:10%;
-right:50%;
-display:flex;
-flex-direction:row;
-border:2px solid #274DEA;
-border-radius: 5px;
 
-}
-.perfil-centro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 16px;
-  color: white;
-  position:relative;
-  z-index: 1;
-  margin-right:30%;
-}
-.foto-perfil{
-max-width: 10%;
-max-height: 10%;
- position:relative;
-  z-index: 2;
-
-   
-}
-.info-pais{
-display:flex;
-flex-direction:row;
-gap:5px;
-}
-
-.info-fecha img{
-max-width: 20px;
-max-height: 20px;
-gap:5px;
-margin-left:10px;
-}
-.info-usuario{
-display:flex;
- flex-direction:row;
-}
 .info-fecha{
 display:flex;
 flex-direction:row;
@@ -129,13 +137,7 @@ border:1px solid #274DEA;
 .div-info-perfil img{
   bottom: 5px;
 }
-.Album-actual, .MisfiguritasFavoritas, .logros {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-  color: white;
-  flex:1;
-}
+/* //contenido perfil// */
 .contenido-perfil{
 display:flex;
 flex-direction:row;
@@ -145,42 +147,35 @@ gap: 1rem;
 margin:0.9rem;
 flex-wrap:wrap;
 }
-.figurita-favorita{
-
- width:25%;      /* ocupa el ancho de su sección */
-  height: auto;       /* mantiene las proporciones */
-   object-fit: contain;
-
+.icono-copa,.icono-figurita-stats,.icono-intercambio-stats{
+ width:2em;
+    height:auto;
+    margin-left:5px;
+      object-fit: contain;
 }
-.MisfiguritasFavoritas{
+.Album-actual, .MisfiguritasFavoritas, .logros {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: white;
+  flex:1;
+}
+/* album */
+.Album-actual{
+ display: flex;
+  flex-direction: column;
+  gap: 0.20rem;
+  padding: 0.30rem;
+}
+.titulo-flecha{
 display:flex;
-flex-direction: row;
- flex-wrap: wrap;
-  gap: 8px; 
+justify-content:space-between;
+align-items:center;
+width:100%;
 }
-.contenedor-fotos{
-  width:100%;
-display:flex;
-justify-content:space-around;
-gap:1em;
-}
-.MisfiguritasFavoritas h2{
-   width: 100%;
-white-space: nowrap;
-margin-bottom: 10px;
-}
-.titulo-figuritas a{
-color:#274DEA;
-text-decoration: none;
-white-space: nowrap;  /* Evita que el texto salte de línea */
-  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
-  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
-  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
-}
-.album-2026{
-  width:100%;
-  align-self: self-start;
-  height:auto;
+i{
+font-size: 20px;
+  color: #274DEA;
 }
 .progreso{
 width:100%;
@@ -188,17 +183,22 @@ display:flex;
 flex-direction:row;
  align-items: center;
   padding:0.01em;
-
+}
+.album-2026{
+  width:100%;
+  align-self: self-start;
+  height:auto;
+}
+.info-progreso{
+display:flex;
+flex-direction:column;
+padding:1em;
+justify-content: flex-start;
 }
 .cantidad-figus-actual{
 display:inline;
 }
-.Album-actual{
- display: flex;
-  flex-direction: column;
-  gap: 0.20rem;
-  padding: 0.30rem;
-}
+
 .barra-de-progreso{
 display:flex;
 flex-direction:row;
@@ -206,12 +206,6 @@ flex-direction:row;
 }
 .barra-de-progreso p{
 margin-left:0.5em;
-}
-.titulo-flecha{
-display:flex;
-justify-content:space-between;
-align-items:center;
-width:100%;
 }
 .Album-actual a{
 color:#274DEA;
@@ -221,21 +215,12 @@ white-space: nowrap;  /* Evita que el texto salte de línea */
   align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
   gap: 5px;             /* Controla la separación entre la palabra y la flechita */
 }
-i{
-font-size: 20px;
-  color: #274DEA;
 
-}
 .Album-actual h2{
 width: 100%;
 white-space: nowrap;
 }
-.info-progreso{
-display:flex;
-flex-direction:column;
-padding:1em;
-justify-content: flex-start;
-}
+
 .cant-figus-actual{
   width:100%;
   white-space: nowrap;
@@ -257,7 +242,6 @@ flex-direction:row;
   margin: 0;
   gap:0.3rem;
 
-
 }
 .tipos-fig li{
 border:0.1em solid #007bff;
@@ -277,6 +261,59 @@ text-align:center;
 text-align:center;
 margin:0;
 } 
+/* figuritas favoritas */
+.figurita-favorita{
+ width:25%;      /* ocupa el ancho de su sección */
+  height: auto;       /* mantiene las proporciones */
+   object-fit: contain;
+}
+.MisfiguritasFavoritas{
+display:flex;
+flex-direction: row;
+ flex-wrap: wrap;
+  gap: 8px; 
+}
+.contenedor-figuritas-favoritas{
+  width:100%;
+display:flex;
+justify-content:space-around;
+gap:1em;
+}
+.MisfiguritasFavoritas h2{
+   width: 100%;
+white-space: nowrap;
+margin-bottom: 10px;
+}
+.titulo-figuritas a{
+color:#274DEA;
+text-decoration: none;
+white-space: nowrap;  /* Evita que el texto salte de línea */
+  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
+  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
+  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
+}
+.carrusel-dots {
+  display: flex;
+  gap:0.5rem; /* Separación entre cada puntito */
+  justify-content: center;
+  margin:auto;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #243346; /* Color gris oscuro para los desactivados */
+  border-radius: 50%; /* Los hace perfectamente redondos */
+  display: inline-block;
+}
+
+/* El puntito que representa la página actual (el celeste brillante) */
+.dot.activo {
+  background-color: #007bff; /* Color azul/celeste brillante */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Opcional: un leve brillo azul */
+}
+
+/* logros */
 .logros{
 display:flex;
 flex-direction:column;
@@ -333,6 +370,36 @@ white-space: nowrap;  /* Evita que el texto salte de línea */
       width: 100%;
         padding: 0.5rem;
 }
+.icono-insignia{
+  width:75px;
+  height:auto;
+}
+  /* INTERCAMBIOS RECIENTES */
+
+  .intercambios-Recientes-cont{
+ background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+    color: white;
+    margin:0.5rem;
+overflow: hidden;
+ padding: 0.5rem;
+
+}
+.titulo-intercambios{
+display:flex;
+justify-content:space-between;
+margin-left:0.5rem;
+}
+.titulo-intercambios a{
+text-decoration:none;
+color:#274DEA;
+text-decoration: none;
+white-space: nowrap;  /* Evita que el texto salte de línea */
+  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
+  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
+  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
+}
 .intercambios-recientes{
     list-style: none;
   padding: 0.5rem;
@@ -341,17 +408,12 @@ display:flex;
 flex-direction: column;
 flex:1;
 gap:10px;
-/* border:1px solid black; */
- /* background-color: rgba(255, 255, 255, 0.05); */
-  /* border: 1px solid rgba(255, 255, 255, 0.15); */
   border-radius: 8px;
-
 }
 .intercambio{
 display:flex;
 flex-direction: row;
 flex-wrap:nowrap;
-/* border-radius: 8px; */
 gap:10px;
  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
  justify-content:center;
@@ -394,72 +456,4 @@ align-items: center;
     height:4vh;
      align-self: center;
      margin-right:5%;
-}
-
-.intercambios-Recientes-cont{
- background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-    color: white;
-    margin:0.5rem;
-overflow: hidden;
- padding: 0.5rem;
-
-}
-.titulo-intercambios{
-display:flex;
-justify-content:space-between;
-margin-left:0.5rem;
-}
-.titulo-intercambios a{
-text-decoration:none;
-color:#274DEA;
-text-decoration: none;
-white-space: nowrap;  /* Evita que el texto salte de línea */
-  display: inline-flex; /* Convierte al enlace en flex para alinear texto + flecha */
-  align-items: center;  /* Centra perfectamente la flecha verticalmente con el texto */
-  gap: 5px;             /* Controla la separación entre la palabra y la flechita */
-}
-.intercambios-recientes ul{
-display:flex;
-flex-direction: row;
-}
-.icono-copa,.icono-figurita-stats,.icono-intercambio-stats{
- width:2em;
-    height:auto;
-    margin-left:5px;
-      object-fit: contain;
-}
-.barra-progreso-nivel{
- width:100%;
- height:10px;
- object-fit: contain;
-}
-.icono-calendar{
-margin-left:5px;
-margin-right:2px;
-}
-.icono-insignia{
-  width:75px;
-  height:auto;
-}
-.carrusel-dots {
-  display: flex;
-  gap:0.5rem; /* Separación entre cada puntito */
-  justify-content: center;
-  margin:auto;
-}
-
-.dot {
-  width: 0.6rem;
-  height: 0.6rem;
-  background-color: #243346; /* Color gris oscuro para los desactivados */
-  border-radius: 50%; /* Los hace perfectamente redondos */
-  display: inline-block;
-}
-
-/* El puntito que representa la página actual (el celeste brillante) */
-.dot.activo {
-  background-color: #007bff; /* Color azul/celeste brillante */
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Opcional: un leve brillo azul */
 }
