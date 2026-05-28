@@ -76,3 +76,51 @@
     font-weight: bold;
     color: #0b1b56;
 }
+@media (max-width: 768px){
+
+    .login-form{
+        width: 90%;
+        padding: 25px;
+        margin: 40px auto;
+    }
+
+    .login-form h2{
+        font-size: 24px;
+    }
+
+    .login-form button{
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px){
+
+    .login-form{
+        width: 95%;
+        padding: 20px;
+        margin: 25px auto;
+        border-radius: 10px;
+    }
+
+    .login-form h2{
+        font-size: 20px;
+    }
+
+    .login-form label{
+        font-size: 14px;
+    }
+
+    .login-form input{
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .login-form button{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .login-form .registro p,
+    .login-form .registro a{
+        font-size: 13px;
+    }
+}

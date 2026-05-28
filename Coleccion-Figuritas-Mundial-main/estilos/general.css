@@ -1,12 +1,10 @@
 body{
     background-color: #d6d6d5;
     color: #000000;
-<<<<<<< HEAD
     font-family: times new roman, serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
-=======
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@ main{
 }
 header, footer{
     font-family: "Montserrat", sans-serif;
->>>>>>> d652080258c618fb944df0c6563abf5246222433
 }
 a{
     color: #288ca0;
@@ -32,8 +29,6 @@ a:hover{
 * {
   box-sizing: border-box;
 }
-<<<<<<< HEAD
-=======
 
 /* Header */
 
@@ -78,4 +73,3 @@ footer{
     text-align: center;
     padding: 20px 0;
 }
->>>>>>> d652080258c618fb944df0c6563abf5246222433
