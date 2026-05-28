@@ -1,6 +1,10 @@
 body{
     background-color: #d6d6d5;
     color: #000000;
+    font-family: times new roman, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +12,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 100px;
 }
 main{
     font-family: "Montserrat", sans-serif;
@@ -25,8 +28,6 @@ a:hover{
 }
 * {
   box-sizing: border-box;
-  margin: 0;
-    padding: 0;
 }
 
 /* Header */
@@ -48,13 +49,7 @@ a:hover{
     align-items: center;
     background-color: #0a1045;
     color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
 }
-
 
 .header-izquierda, .header-derecho{
     display: flex;
@@ -69,11 +64,6 @@ a:hover{
     margin: 0;
     padding: 0;
 }
-.usuario {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
 
 /*footer*/
 
@@ -81,42 +71,5 @@ footer{
     background-color: #0a1045;
     color: white;
     text-align: center;
-    padding: 1px ;
-    display:flex;
-    flex-direction: column;
-}
-
-.footer-contenedor {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    flex-direction: row;
-}
-
-.footer-bajo{
-    background-color: #0a1045;
-    color: white;
-    text-align: center;
     padding: 20px 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
-}
-
-.logo-footer {
-    height: 230px;
-    width: 210px;
-}
-
-.footer-medio {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer-derecha {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
 }

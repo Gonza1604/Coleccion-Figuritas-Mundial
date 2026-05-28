@@ -1,0 +1,114 @@
+.recuperar-form{
+    width: 380px;
+    margin: 80px auto;
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recuperar-form h2{
+    text-align: center;
+    color: #0b1b56;
+    margin-bottom: 10px;
+}
+
+.recuperar-form .mensaje{
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.recuperar-form label{
+    font-weight: bold;
+    color: #333;
+}
+
+.recuperar-form input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.recuperar-form input:focus{
+    border-color: #2b7cff;
+}
+
+.recuperar-form button{
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #0b1b56;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.recuperar-form button:hover{
+    background-color: #2b7cff;
+}
+
+.recuperar-form .volver{
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.recuperar-form .volver p{
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.recuperar-form .volver a{
+    text-decoration: none;
+    color: #0b1b56;
+    font-weight: bold;
+}
+
+.recuperar-form .volver a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 480px){
+    .recuperar-form{
+        width: 95%;
+        padding: 20px;
+        margin: 40px auto;
+        border-radius: 10px;
+    }
+
+    .recuperar-form h2{
+        font-size: 20px;
+    }
+
+    .recuperar-form .mensaje{
+        font-size: 13px;
+    }
+
+    .recuperar-form input{
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .recuperar-form button{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .recuperar-form .volver p,
+    .recuperar-form .volver a{
+        font-size: 13px;
+    }
+}
