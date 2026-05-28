@@ -70,6 +70,8 @@ footer{
     color: white;
     text-align: center;
     padding: 1px ;
+    display:flex;
+    flex-direction: column;
 }
 
 .footer-contenedor {
@@ -78,6 +80,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    flex-direction: row;
 }
 
 .footer-bajo{
@@ -85,6 +88,7 @@ footer{
     color: white;
     text-align: center;
     padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
 
 .logo-footer {
