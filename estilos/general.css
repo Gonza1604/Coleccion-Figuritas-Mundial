@@ -69,5 +69,38 @@ footer{
     background-color: #0a1045;
     color: white;
     text-align: center;
+    padding: 1px ;
+}
+
+.footer-contenedor {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-bajo{
+    background-color: #0a1045;
+    color: white;
+    text-align: center;
     padding: 20px 0;
+}
+
+.logo-footer {
+    height: 230px;
+    width: 210px;
+}
+
+.footer-medio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
 }

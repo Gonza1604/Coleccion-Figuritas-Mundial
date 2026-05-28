@@ -9,8 +9,9 @@
 }
 
 .campos {
-    text-align: right;
+    text-align: center;
     flex: 1;
+    margin-right: 20px;
 }
 
 .contenido {
