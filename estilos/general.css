@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 100px;
 }
 main{
     font-family: "Montserrat", sans-serif;
@@ -47,7 +48,13 @@ a:hover{
     align-items: center;
     background-color: #0a1045;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 .header-izquierda, .header-derecho{
     display: flex;
@@ -61,6 +68,11 @@ a:hover{
     gap: 10px;
     margin: 0;
     padding: 0;
+}
+.usuario {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
 }
 
 /*footer*/
