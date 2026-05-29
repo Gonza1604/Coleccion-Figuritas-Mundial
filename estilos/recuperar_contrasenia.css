@@ -80,3 +80,34 @@
 .recuperar-form .volver a:hover{
     text-decoration: underline;
 }
+@media (max-width: 480px){
+    .recuperar-form{
+        width: 95%;
+        padding: 20px;
+        margin: 40px auto;
+        border-radius: 10px;
+    }
+
+    .recuperar-form h2{
+        font-size: 20px;
+    }
+
+    .recuperar-form .mensaje{
+        font-size: 13px;
+    }
+
+    .recuperar-form input{
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .recuperar-form button{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .recuperar-form .volver p,
+    .recuperar-form .volver a{
+        font-size: 13px;
+    }
+}
