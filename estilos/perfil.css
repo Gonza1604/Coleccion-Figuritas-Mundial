@@ -558,7 +558,7 @@ box-sizing: border-box;
   }
 }
 
-@media screen and (min-width:300px) and (max-width: 480px) {
+@media screen  and (max-width: 480px) {
   .perfil {
     flex-direction: column;
     align-items: center;
