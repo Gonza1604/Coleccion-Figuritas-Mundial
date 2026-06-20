@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;  /* evita el scroll horizontal */
+}
+
+img {
+    max-width: 100%;     /* las imágenes no se salen del contenedor */
+}
 .login-form{
     width: 350px;
     margin: 50px auto;

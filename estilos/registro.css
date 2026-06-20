@@ -1,11 +1,11 @@
 .registro {
     text-align: center;
     margin: 50px auto;
-    background-color: #288CA0;
-    width: 380px;
+    background-color: white;
+    width: 420px;
     padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 15px;
 }
 
 .campos {
@@ -24,20 +24,65 @@
 
 .ingresar {
     cursor: pointer;
+    width: 100%;
     margin-top: 20px;
+}
+
+
+button {
+    padding: 12px;
+    background-color: #0b1b56;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .link-iniciar-sesion {
      color: rgb(25, 22, 182);
 }
 
+h2 {
+    text-align: center;
+    color: #0b1b56;
+    margin-bottom: 15px;
+}
+
 input[type="file"] {
     display: none; 
 }
 
+label {
+    font-weight: bold;
+    color: #333;
+
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+input:focus {
+    border-color: #2b7cff;
+}
+
+ button:hover {
+    background-color: #2b7cff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 .zona-drop {
-    width: 130px;
-    height: 150px;
+    width: 150px;
+    height: 225px;
     background-color: #DCDBD9;
     border-radius: 8px;
     cursor: pointer;
