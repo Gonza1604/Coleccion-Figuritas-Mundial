@@ -24,7 +24,20 @@
 
 .ingresar {
     cursor: pointer;
+    width: 100%;
     margin-top: 20px;
+}
+
+
+button {
+    padding: 12px;
+    background-color: #0b1b56;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .link-iniciar-sesion {
@@ -54,17 +67,18 @@ input {
     outline: none;
     font-size: 14px;
 }
-
-button {
-    padding: 12px;
-    background-color: #0b1b56;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s;
+input:focus {
+    border-color: #2b7cff;
 }
+
+ button:hover {
+    background-color: #2b7cff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 .zona-drop {
     width: 150px;

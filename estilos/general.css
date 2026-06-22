@@ -76,6 +76,12 @@ a:hover{
     border-radius: 50%;
 }
 
+.usuario {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
 /*footer*/
 
 footer{
@@ -120,4 +126,47 @@ footer{
     flex-direction: column;
     gap: 8px;
 
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .header-izquierda {
+        flex-direction: column;
+    }
+    .header-izquierda-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+        gap: 8px;
+        padding: 8px;
+    }
+    .header-derecho {
+        flex-direction: column;
+    }
+    .header-derecho-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+        gap: 8px;
+    }
+    .usuario {
+        height: 50px;
+        width: 50px;
+    }
+    body {
+            padding-top: 280px; 
+        }
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 1rem;
+    }
+    .logo-footer {
+        height: 150px;
+        width: 130px;
+    }
 }
