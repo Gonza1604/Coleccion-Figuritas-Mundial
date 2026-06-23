@@ -26,7 +26,6 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-
 .perfil::before {
   content: '';
   position: absolute;
