@@ -6,6 +6,7 @@
    <link rel="stylesheet" href="../estilos/general.css">
     <link rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/registro.css">
+    <script src="../interaccion/registro.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">      
@@ -44,15 +45,15 @@
              <form class="campos">
             <label for="usuario">Usuario</label>
                 <br><br>
-                <input type="text" name="Usuario" placeholder="Usuario123_"  required>
+                <input type="text" id="usuario" name="Usuario" placeholder="Usuario123_"  required>
                 <br><br><br>
-                <label for="correo">Correo electronico</label>
+                <label for="email">Correo electronico</label>
                 <br><br>
-                <input type="email" name="Correo electronico" placeholder="usuario@gmail.com" pattern=".+@gmail.com" title="Debe ser un correo valido" required>
+                <input type="email" id="email" name="Correo electronico" placeholder="usuario@gmail.com" pattern=".+@gmail.com" title="Debe ser un correo valido" required>
                 <br><br><br>
-                <label for="contrasenia">Contraseña</label required>
+                <label for="contraseña">Contraseña</label required>
                 <br><br>
-                <input type="password" name="Contraseña" placeholder="Minimo 8 caracteres">
+                <input type="password" id="contraseña" name="Contraseña" placeholder="Minimo 8 caracteres">
             </form>
 
         </div>
