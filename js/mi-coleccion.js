@@ -4,7 +4,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-modric.jpg",
         alt: "Figura de Modric",
-        claseImg: "figura-modric",
+        claseImg: "figura-luka-modric",
         año: 2026,
         pais: "Croacia"
     },
@@ -13,7 +13,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-messi.jpg",
         alt: "Figura de Messi",
-        claseImg: "figura-messi",
+        claseImg: "figura-lionel-messi",
         año: 2026,
         pais: "Argentina"
     },
@@ -22,7 +22,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-neymar.jpg",
         alt: "Figura de Neymar",
-        claseImg: "figura-neymar",
+        claseImg: "figura-neymar-jr",
         año: 2026,
         pais: "Brasil"
     },
@@ -31,7 +31,7 @@ const figuritas = [
         tipo: "Rara",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-ronaldo.jpg",
         alt: "Figura de Ronaldo",
-        claseImg: "figura-Ronaldo",
+        claseImg: "figura-cristiano-ronaldo",
         año: 2026,
         pais: "Portugal"
     },
@@ -40,7 +40,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-yamal.jpg",
         alt: "Figura de Lamine Yamal",
-        claseImg: "figura-lamine",
+        claseImg: "figura-lamine-yamal",
         año: 2026,
         pais: "España"
     },
@@ -49,7 +49,7 @@ const figuritas = [
         tipo: "Coca Cola",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-harrykane.jpg",
         alt: "Figura de Harry Kane",
-        claseImg: "figura-harrykane",
+        claseImg: "figura-harry-kane",
         año: 2026,
         pais: "Inglaterra"
     },
@@ -58,7 +58,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-enzoFernandez.jpg",
         alt: "Figura de Enzo Fernandez",
-        claseImg: "figura-enzofernandez",
+        claseImg: "figura-enzo-fernandez",
         año: 2026,
         pais: "Argentina"
     },
@@ -67,7 +67,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-julianAlvarez.jpg",
         alt: "Figura de Julian Alvarez",
-        claseImg: "figura-julianalvarez",
+        claseImg: "figura-julian-alvarez",
         año: 2026,
         pais: "Argentina"
     },
@@ -76,7 +76,7 @@ const figuritas = [
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-haaland.jpg",
         alt: "Figura de Haaland",
-        claseImg: "figura-Haaland",
+        claseImg: "figura-erling-haaland",
         año: 2026,
         pais: "Noruega"
     },
@@ -85,7 +85,7 @@ const figuritas = [
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-messiDorada.jpg",
         alt: "Figura de Messi",
-        claseImg: "figura-messiDorada",
+        claseImg: "figura-lionel-messi-dorada",
         año: 2026,
         pais: "Argentina"
     },
@@ -94,7 +94,7 @@ const figuritas = [
         tipo: "Coca Cola",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-lautaroM.jpg",
         alt: "Figura de Lautaro Martinez",
-        claseImg: "figura-lautaromartinez",
+        claseImg: "figura-lautaro-martinez",
         año: 2026,
         pais: "Argentina"
     },
@@ -103,15 +103,15 @@ const figuritas = [
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-mbappe.jpg",
         alt: "Figura de Kylian Mbappé",
-        claseImg: "figura-mbappe",
+        claseImg: "figura-kylian-mbappe",
         año: 2026,
         pais: "Francia"
     }
 ]
-function mostrarFiguritas() {
+function mostrarFiguritas(lista) {
     const contenedorFig = document.querySelector('.contenedor-coleccion');
 
-    figuritas.forEach(figurita => {
+    lista.forEach(figurita => {
         const card = document.createElement('article');
         card.classList.add('card');
         const pTipoFig = document.createElement('p');
@@ -145,4 +145,18 @@ card.appendChild(botonFav);
 contenedorFig.appendChild(card);
     });
 }
-mostrarFiguritas();
+mostrarFiguritas(figuritas);
+
+
+const buscador = document.querySelector('#buscador');
+buscador.addEventListener('input', function() { 
+    const textoBuscado = buscador.value.toLowerCase();
+
+    const filtradas = figuritas.filter(figurita => {
+        return figurita.alt.toLowerCase().includes(textoBuscado)
+    })
+
+    const contenedor = document.querySelector('.contenedor-coleccion');
+    contenedor.innerHTML = '';
+    mostrarFiguritas(filtradas);
+});
