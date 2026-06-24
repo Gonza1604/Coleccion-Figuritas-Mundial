@@ -6,7 +6,6 @@
    <link rel="stylesheet" href="../estilos/general.css">
     <link rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/registro.css">
-    <script src="../interaccion/registro.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">      
@@ -35,6 +34,7 @@
         </section>
     </header>
 
+     
         <section class="registro" >
             <h2>Registro</h2>
         <div class="contenido"> 
@@ -42,19 +42,19 @@
             <input type="file" id="foto-input" name="foto-de-perfil" accept="image/*">
             <br><br>
        
-             <form class="campos">
-            <label for="usuario">Usuario</label>
+           <form class="campos">
+            <label for="nombre">Usuario</label>
                 <br><br>
-                <input type="text" id="usuario" name="Usuario" placeholder="Usuario123_"  required>
+                <input type="text" id="nombre" name="Usuario" placeholder="Usuario123_" >
                 <br><br><br>
                 <label for="email">Correo electronico</label>
                 <br><br>
-                <input type="email" id="email" name="Correo electronico" placeholder="usuario@gmail.com" pattern=".+@gmail.com" title="Debe ser un correo valido" required>
+                <input type="email" id="email" name="Correo electronico" placeholder="usuario@gmail.com" pattern=".+@gmail.com" title="Debe ser un correo valido" >
                 <br><br><br>
-                <label for="contraseña">Contraseña</label required>
+                <label for="contraseña">Contraseña</label>
                 <br><br>
                 <input type="password" id="contraseña" name="Contraseña" placeholder="Minimo 8 caracteres">
-            </form>
+            
 
         </div>
 
@@ -63,6 +63,11 @@
             <h4 class="iniciar-sesion">¿Ya tenes una cuenta? <br> <a class="link-iniciar-sesion" href="iniciar-sesion.html">Iniciar sesion</a> </h4>
         </div>
 
+        <div id="mensaje" class="error">
+
+        </div>
+        </form>
+    
     </section>
     
     <main>
@@ -86,6 +91,7 @@
                 &copy; 2026 Colección de Figuritas del Mundial. Todos los derechos reservados.
             </p>
         </div>
-    </footer>
+    </footer>   
+    <script src="../js/registro.js" defer></script>
 </body>
 </html>

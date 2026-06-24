@@ -93,3 +93,13 @@ a:hover {
     font-size: 13px;
     flex-shrink: 0;
 }
+
+input.error{
+    border:1px solid crimson;
+}
+#mensaje{
+    margin-top: 2em;
+}
+.error{
+    color: crimson;
+}
