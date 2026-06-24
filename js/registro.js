@@ -3,13 +3,15 @@ let mensaje=document.querySelector("#mensaje");
 
 function validar() {
     let error = false;
+    let exito = false;
     let mensajesError = "";
+    let mensajeExitoso = "";
     let nombre = document.querySelector("#nombre").value;
     let email = document.querySelector("#email").value;
     let contraseña = document.querySelector("#contraseña").value;
 
     if (nombre == "") {
-        error=true;
+        error = true;
         mensajesError += "<p>El campo nombre no puede estar vacío</p>"
     }
     if (email == "") {
@@ -21,7 +23,10 @@ function validar() {
         mensajesError += "<p>El campo contraseña debe llenarse</p>"
     }
     if (error) {
-        mensaje.innerHTML=mensajesError;
+        mensaje.classList.remove("exitoso");
+        mensaje.classList.add("error");
+
+        mensaje.innerHTML = mensajesError;
     } else { 
         
     let usuario = {
@@ -39,13 +44,20 @@ console.log(existe);
 if (existe == true) {
     error = true;
     mensajesError += "<p>Este usuario ya existe</p>"
+    mensaje.classList.remove("exitoso");
+    mensaje.classList.add("error");
+
     mensaje.innerHTML=mensajesError;
 
 } else {
     usuarios.push(usuario);
     usuario = JSON.stringify(usuario);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    form.submit();
+    mensaje.classList.add("exitoso");
+    mensaje.classList.remove("error");
+    mensajeExitoso += "<p>¡Se registro el usuario con exito!</p>"
+    mensaje.innerHTML = mensajeExitoso;
+
 
 }
 

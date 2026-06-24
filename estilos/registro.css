@@ -103,3 +103,7 @@ input.error{
 .error{
     color: crimson;
 }
+
+.exitoso{
+    color: rgb(1, 181, 25);
+}
