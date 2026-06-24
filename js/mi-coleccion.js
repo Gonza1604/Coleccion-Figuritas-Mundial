@@ -132,21 +132,27 @@ card.appendChild(img);
 const botonFav = document.createElement('button');
 botonFav.classList.add('boton-fav');
 botonFav.appendChild(document.createTextNode('🤍'));
-
-botonFav.addEventListener('click', function() {
+if(figuritasFavoritas. includes(figurita.id)){
+ botonFav.textContent = '❤️';
+ botonFav.classList.add('favorito-activo');
+}
+botonFav.addEventListener('click', function()  {
   botonFav.classList.toggle('favorito-activo');
   if (botonFav.classList.contains('favorito-activo')) {
     botonFav.textContent = '❤️';
+    figuritasFavoritas.push(figurita.id);
   } else {
     botonFav.textContent = '🤍'
+    figuritasFavoritas = figuritasFavoritas.filter(id => id !== figurita.id);
   }
+  localStorage.setItem('figuritasFavoritas', JSON.stringify(figuritasFavoritas));
 });
 card.appendChild(botonFav);
 contenedorFig.appendChild(card);
     });
 }
+let figuritasFavoritas=JSON.parse(localStorage.getItem('figuritasFavoritas'))||[];
 mostrarFiguritas(figuritas);
-
 
 const buscador = document.querySelector('#buscador');
 buscador.addEventListener('input', function() { 
@@ -159,4 +165,6 @@ buscador.addEventListener('input', function() {
     const contenedor = document.querySelector('.contenedor-coleccion');
     contenedor.innerHTML = '';
     mostrarFiguritas(filtradas);
-});
+})
+
+;
