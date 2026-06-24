@@ -9,6 +9,7 @@ const figuritas = [
         pais: "Croacia"
     },
     {
+        id: 2,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-messi.jpg",
         alt: "Figura de Messi",
@@ -17,7 +18,7 @@ const figuritas = [
         pais: "Argentina"
     },
     {
-        id: 2,
+        id: 3,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-neymar.jpg",
         alt: "Figura de Neymar",
@@ -26,7 +27,7 @@ const figuritas = [
         pais: "Brasil"
     },
     {
-        id: 3,
+        id: 4,
         tipo: "Rara",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-ronaldo.jpg",
         alt: "Figura de Ronaldo",
@@ -35,7 +36,7 @@ const figuritas = [
         pais: "Portugal"
     },
     {
-        id: 4,
+        id: 5,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-yamal.jpg",
         alt: "Figura de Lamine Yamal",
@@ -44,7 +45,7 @@ const figuritas = [
         pais: "España"
     },
     {
-        id: 5,
+        id: 6,
         tipo: "Coca Cola",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-harrykane.jpg",
         alt: "Figura de Harry Kane",
@@ -53,7 +54,7 @@ const figuritas = [
         pais: "Inglaterra"
     },
     {
-        id: 6,
+        id: 7,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-enzoFernandez.jpg",
         alt: "Figura de Enzo Fernandez",
@@ -62,7 +63,7 @@ const figuritas = [
         pais: "Argentina"
     },
     {
-        id: 7,
+        id: 8,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-julianAlvarez.jpg",
         alt: "Figura de Julian Alvarez",
@@ -71,7 +72,7 @@ const figuritas = [
         pais: "Argentina"
     },
     {
-        id: 8,
+        id: 9,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-haaland.jpg",
         alt: "Figura de Haaland",
@@ -80,7 +81,7 @@ const figuritas = [
         pais: "Noruega"
     },
     {
-        id: 9,
+        id: 10,
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-messiDorada.jpg",
         alt: "Figura de Messi",
@@ -89,7 +90,7 @@ const figuritas = [
         pais: "Argentina"
     },
     {
-        id: 10,
+        id: 11,
         tipo: "Coca Cola",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-lautaroM.jpg",
         alt: "Figura de Lautaro Martinez",
@@ -98,7 +99,7 @@ const figuritas = [
         pais: "Argentina"
     },
     {
-        id: 11,
+        id: 12,
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-mbappe.jpg",
         alt: "Figura de Kylian Mbappé",
@@ -128,22 +129,20 @@ card.appendChild(img);
         pPais.appendChild(document.createTextNode(figurita.pais));
         card.appendChild(pPais);
     
-
-const botonFav=document.createElement('button');
+const botonFav = document.createElement('button');
 botonFav.classList.add('boton-fav');
 botonFav.appendChild(document.createTextNode('🤍'));
-card.appendChild(botonFav);
-        contenedorFig.appendChild(card);
-          botonFav.addEventListener('click',function(){
-if(botonFav.textContent==='🤍'){
-    botonFav.textContent='❤️';
-}
-else{
-    botonFav.textContent='🤍';
-}
+
+botonFav.addEventListener('click', function() {
+  botonFav.classList.toggle('favorito-activo');
+  if (botonFav.classList.contains('favorito-activo')) {
+    botonFav.textContent = '❤️';
+  } else {
+    botonFav.textContent = '🤍';
+  }
 });
 card.appendChild(botonFav);
-    }
-);
+contenedorFig.appendChild(card);
+    });
 }
 mostrarFiguritas();
