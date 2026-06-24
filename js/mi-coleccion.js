@@ -132,7 +132,7 @@ card.appendChild(img);
 const botonFav = document.createElement('button');
 botonFav.classList.add('boton-fav');
 botonFav.appendChild(document.createTextNode('🤍'));
-if(figuritasFavoritas. includes(figurita.id)){
+if(figuritasFavoritas.includes(figurita.id)){
  botonFav.textContent = '❤️';
  botonFav.classList.add('favorito-activo');
 }
