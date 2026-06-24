@@ -45,7 +45,7 @@ const figuritas = [
     },
     {
         id: 5,
-        tipo: "Colaboracion con coca cola",
+        tipo: "Coca Cola",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-harrykane.jpg",
         alt: "Figura de Harry Kane",
         claseImg: "figura-harrykane",
@@ -90,7 +90,7 @@ const figuritas = [
     },
     {
         id: 10,
-        tipo: "Colaboracion con coca cola",
+        tipo: "Coca Cola",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-lautaroM.jpg",
         alt: "Figura de Lautaro Martinez",
         claseImg: "figura-lautaromartinez",
@@ -116,17 +116,34 @@ function mostrarFiguritas() {
         const pTipoFig = document.createElement('p');
         pTipoFig.appendChild(document.createTextNode(figurita.tipo));
         card.appendChild(pTipoFig);
+        const img = document.createElement('img');
+img.src = figurita.imagen;
+img.alt = figurita.alt;
+img.classList.add(figurita.claseImg);
+card.appendChild(img);
         const pAnio = document.createElement('p');
         pAnio.appendChild(document.createTextNode(figurita.año));
         card.appendChild(pAnio);
-        card.innerHTML +=
-    `<img src="${figurita.imagen}" alt="${figurita.alt}" class="${figurita.claseImg}">
-<p>Pais: ${figurita.pais}</p>`;
+        const pPais = document.createElement('p');
+        pPais.appendChild(document.createTextNode(figurita.pais));
+        card.appendChild(pPais);
+    
+
 const botonFav=document.createElement('button');
 botonFav.classList.add('boton-fav');
 botonFav.appendChild(document.createTextNode('🤍'));
 card.appendChild(botonFav);
         contenedorFig.appendChild(card);
-    });
+          botonFav.addEventListener('click',function(){
+if(botonFav.textContent==='🤍'){
+    botonFav.textContent='❤️';
+}
+else{
+    botonFav.textContent='🤍';
+}
+});
+card.appendChild(botonFav);
+    }
+);
 }
 mostrarFiguritas();
