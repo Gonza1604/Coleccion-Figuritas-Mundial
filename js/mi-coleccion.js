@@ -102,7 +102,7 @@ const figuritas = [
         id: 12,
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-mbappe.jpg",
-        alt: "Figura de Kylian Mbappé",
+        alt: "Figura de Kylian Mbappé-dictador",
         claseImg: "figura-kylian-mbappe",
         año: 2026,
         pais: "Francia"
@@ -138,7 +138,7 @@ botonFav.addEventListener('click', function() {
   if (botonFav.classList.contains('favorito-activo')) {
     botonFav.textContent = '❤️';
   } else {
-    botonFav.textContent = '🤍';
+    botonFav.textContent = '🤍'
   }
 });
 card.appendChild(botonFav);
