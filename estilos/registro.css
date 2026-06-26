@@ -94,9 +94,6 @@ a:hover {
     flex-shrink: 0;
 }
 
-input.error{
-    border:1px solid crimson;
-}
 #mensaje{
     margin-top: 2em;
 }
