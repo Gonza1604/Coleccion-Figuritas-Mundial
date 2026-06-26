@@ -1,4 +1,4 @@
-let idfiguritas=JSON.parse(localStorage.getItem('figuritasFavoritas'))||[];
+llet idfiguritas=JSON.parse(localStorage.getItem('figuritasFavoritas'))||[];
 let figuritas = [
     {
         id: 1,
