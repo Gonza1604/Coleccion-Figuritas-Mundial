@@ -39,7 +39,7 @@ let datos = localStorage.getItem("usuarios");
 let usuarios = datos ? JSON.parse(datos) : [];
 
 let existe = usuarios.some(u => u.nombre === usuario.nombre);
-console.log(existe);
+
 
 if (existe == true) {
     error = true;

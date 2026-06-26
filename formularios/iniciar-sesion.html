@@ -42,7 +42,7 @@
     <main>
        
 
-    <form class="login-form" action="#" method="post">
+    <form class="login-form">
 
          <h2>Iniciar Sesión</h2>
 
@@ -55,8 +55,7 @@
             type="text"
             id="usuario"
             name="usuario"
-            placeholder="Ingrese su usuario o correo"
-            required>
+            placeholder="Ingrese su usuario o correo">
         <br><br>
 
         <label for="password">
@@ -67,13 +66,15 @@
             type="password"
             id="password"
             name="password"
-            placeholder="Ingrese su contraseña"
-            required>
+            placeholder="Ingrese su contraseña">
         <br><br>
 
         <button type="submit">
             Iniciar sesión
         </button>
+
+        <div id="mensaje">
+        </div>
 
         <br><br>
 
@@ -105,5 +106,6 @@
             </p>
         </div>
     </footer>
+    <script src="../js/iniciar-sesion.js"></script>
 </body>
 </html>
