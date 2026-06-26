@@ -3,7 +3,7 @@ const figuritas = [
         id: 1,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-modric.jpg",
-        alt: "Figura de Modric",
+        alt: "Figura de Luka Modric",
         claseImg: "figura-luka-modric",
         año: 2026,
         pais: "Croacia"
@@ -12,7 +12,7 @@ const figuritas = [
         id: 2,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-messi.jpg",
-        alt: "Figura de Messi",
+        alt: "Figura de Lionel Messi",
         claseImg: "figura-lionel-messi",
         año: 2026,
         pais: "Argentina"
@@ -21,7 +21,7 @@ const figuritas = [
         id: 3,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-neymar.jpg",
-        alt: "Figura de Neymar",
+        alt: "Figura de Neymar Jr",
         claseImg: "figura-neymar-jr",
         año: 2026,
         pais: "Brasil"
@@ -30,7 +30,7 @@ const figuritas = [
         id: 4,
         tipo: "Rara",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-ronaldo.jpg",
-        alt: "Figura de Ronaldo",
+        alt: "Figura de Cristiano Ronaldo",
         claseImg: "figura-cristiano-ronaldo",
         año: 2026,
         pais: "Portugal"
@@ -75,7 +75,7 @@ const figuritas = [
         id: 9,
         tipo: "Común",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-haaland.jpg",
-        alt: "Figura de Haaland",
+        alt: "Figura de Erling Haaland",
         claseImg: "figura-erling-haaland",
         año: 2026,
         pais: "Noruega"
@@ -84,7 +84,7 @@ const figuritas = [
         id: 10,
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-messiDorada.jpg",
-        alt: "Figura de Messi",
+        alt: "Figura de Lionel Messi dorada",
         claseImg: "figura-lionel-messi-dorada",
         año: 2026,
         pais: "Argentina"
@@ -102,7 +102,7 @@ const figuritas = [
         id: 12,
         tipo: "Dorada",
         imagen: "../iconos-e-imagenes/imagenes-figus/figu-mbappe.jpg",
-        alt: "Figura de Kylian Mbappé-dictador",
+        alt: "Figura de Kylian Mbappé",
         claseImg: "figura-kylian-mbappe",
         año: 2026,
         pais: "Francia"
@@ -159,8 +159,10 @@ buscador.addEventListener('input', function() {
     const textoBuscado = buscador.value.toLowerCase();
 
     const filtradas = figuritas.filter(figurita => {
-        return figurita.alt.toLowerCase().includes(textoBuscado)
-    })
+        const coincideAlt = figurita.alt.toLowerCase().includes(textoBuscado);
+        const coincidePais = figurita.pais.toLowerCase().includes(textoBuscado);
+        return coincideAlt || coincidePais;
+    });
 
     const contenedor = document.querySelector('.contenedor-coleccion');
     contenedor.innerHTML = '';
