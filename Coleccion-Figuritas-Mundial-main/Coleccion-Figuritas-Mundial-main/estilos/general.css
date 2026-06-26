@@ -1,0 +1,276 @@
+body{
+    background-color: #d6d6d5;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+main{
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+}
+header, footer{
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    color: #288ca0;
+}
+a:hover{
+    color: #1a237e;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.logo, .usuario{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1045;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.header-izquierda, .header-derecho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-izquierda-menu, .header-derecho-menu{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.usuario {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.usuario {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+/*footer*/
+
+footer{
+    background-color: #0a1045;
+    color: white;
+    text-align: center;
+    padding: 1px ;
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-contenedor {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.footer-bajo{
+    background-color: #0a1045;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.logo-footer {
+    height: 230px;
+    width: 210px;
+}
+
+.footer-medio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+/* Media Querie */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .header-izquierda {
+        flex-direction: column;
+    }
+    .header-izquierda-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+        gap: 8px;
+        padding: 8px;
+    }
+    .header-derecho {
+        flex-direction: column;
+    }
+    .header-derecho-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+        gap: 8px;
+    }
+    .usuario {
+        height: 50px;
+        width: 50px;
+    }
+    body {
+            padding-top: 280px; 
+        }
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 1rem;
+    }
+    .logo-footer {
+        height: 150px;
+        width: 130px;
+    }
+}
+
+.menu-toggle { display: none; }
+.hamburguesa { display: none; }
+.header-derecha-fija { display: none; }
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 70px;
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px;
+        min-height: 60px;
+    }
+
+    /* Logo siempre visible, izquierda */
+    .logo {
+        height: 45px;
+        width: auto;
+        margin: 0;
+        display: block;
+    }
+
+    /* Usuario + hamburguesa, derecha, siempre visibles */
+    .header-derecha-fija {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .usuario {
+        height: 38px;
+        width: 38px;
+    }
+
+    .hamburguesa {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Ocultar el usuario dentro del header-derecho (el del menú desplegable) */
+    .header-derecho .usuario {
+        display: none;
+    }
+
+    /* Ocultar secciones del menú por defecto */
+    .header-izquierda,
+    .header-derecho {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+    /* Mostrar cuando está abierto */
+    .menu-toggle:checked ~ .header-izquierda,
+    .menu-toggle:checked ~ .header-derecho {
+        display: flex;
+    }
+
+    .header-izquierda-menu,
+    .header-derecho-menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+        gap: 8px;
+        padding: 5px 0;
+        list-style: none;
+    }
+
+    /* Fix botón Mi Colección partido */
+    .hero-buttons a {
+        display: inline-block;
+        white-space: nowrap;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0.5rem;
+    }
+
+    .logo-footer {
+        height: 110px;
+        width: 95px;
+    }
+
+    .footer-bajo {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+}
