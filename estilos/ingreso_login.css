@@ -87,3 +87,15 @@ img {
     font-weight: bold;
     color: #0b1b56;
 }
+
+#mensaje{
+    margin-top: 2em;
+    text-align: center;
+}
+.error{
+    color: crimson;
+}
+
+.exitoso{
+    color: rgb(1, 181, 25);
+}
